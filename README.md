@@ -63,3 +63,6 @@ Replace `[repository]` and `[repository URL]` with your GitHub repository's info
 ## Support
 
 For support, please open an issue on the GitHub repository or contact the maintainers.
+
+## App Screenshot 
+![Screenshot 2023-12-24 at 5.38.09 AM.png](..%2F..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202023-12-24%20at%205.38.09%E2%80%AFAM.png)
