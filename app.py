@@ -45,11 +45,10 @@ with st.form(key='lease_form'):
     property_zipcode = st.text_input("Property Zipcode")
     date_of_agreement = st.date_input("Date of Agreement")
     from_date = st.date_input("Lease Start Date")
-    end_date = st.date_input("Lease End Date")
-    rent_period = st.text_input("Lease Duration")
-    total_rent = st.text_input("Total Rent ($)")
+    rent_period = st.text_input("Lease Term")
     monthly_rent = st.text_input("Monthly Rent ($)")
     security_deposit = st.text_input("Security Deposit ($)")
+    payment_details = st.text_input("Bank or Zelle Details")
     landlord_name = st.text_input("Landlord's Name")
     property_management_company = st.text_input("Property Management Company")
     property_management_address = st.text_input("Property Management Address")
@@ -63,11 +62,10 @@ if submit_button:
         "property_zipcode": property_zipcode,
         "date_of_agreement": str(date_of_agreement),
         "from_date": str(from_date),
-        "end_date": str(end_date),
         "rent_period": rent_period,
-        "total_rent": total_rent,
         "monthly_rent": monthly_rent,
         "security_deposit": security_deposit,
+        "payment_details": payment_details,
         "landlord_name": landlord_name,
         "property_management_company": property_management_company,
         "property_management_address": property_management_address
@@ -87,11 +85,10 @@ if submit_button:
     - ZIP Code: {property_zipcode}
     - Date of Agreement: {str(date_of_agreement)}
     - Lease Start Date: {str(from_date)}
-    - Lease End Date: {str(end_date)}
-    - Lease Duration: {rent_period}
-    - Total Rent: {total_rent}
+    - Lease Term: {rent_period}
     - Monthly Rent: {monthly_rent}
     - Security Deposit: {security_deposit}
+    - Bank or Zelle details: {payment_details}
     - Landlord's Name: {landlord_name}
     - Property Management Company: {property_management_company}
     - Property Management Address: {property_management_address}
